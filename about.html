@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Hana Choi about</title>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<div class="cursor"></div>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- For cursor -->
+		<script>
+			const cursor = document.querySelector('.cursor');
+
+			document.addEventListener('mousemove', e=> {
+				cursor.setAttribute("style", "top: "+(e.pageY - scrollY)+"px; left:" +(e.pageX)+"px")
+				//cursor.setAttribute("style", "top: "+e.pageY+"px; left: "+e.pageX+"px")
+			})
+
+			document.addEventListener('click', () => {
+				cursor.classList.add("expand");
+
+				setTimeout(() => {
+					cursor.classList.remove("expand");
+				}, 500)
+			})
+
+		</script>
+
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><span class="title">Hana Choi</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li><a href="https://www.linkedin.com/in/hanachoi-design/">LinkedIn</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+					<div class="inner">
+						<section>
+							<p><span class="image left"><img src="images/about.jpg" alt="" />
+							</span><h3>Hey there!</h3></p>
+							<p>🎓 I'm Hana, a recent grad from Rhode Island School of Design with graphic design major.
+							</p>
+							<p>🇬🇧 I also studied abroad at London College of Communications spring 2023 to learn more in depth about UI/UX design.
+							</p>
+
+							<p>🧑‍🎨 I’m a passionate visual designer that enjoys putting together a meaning of a company into a brand.
+							</p>
+
+							<p>
+								👀 Currently looking for full-time to internship opportunity, as well as freelancing work.
+							</p>
+
+							<p>🎂 In my free time, I enjoy reading books, making coffee, and baking.
+							</p>
+
+						</section>
+					</div>
+				</div>
+				
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="inner">
+		<section>
+			<p>🖥️ Designed and coded by Hana Choi • 2023</p>
+		<section>
+	</div>
+</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
