@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Hana Choi about</title>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<div class="cursor"></div>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- For cursor -->
+		<script>
+			const cursor = document.querySelector('.cursor');
+
+			document.addEventListener('mousemove', e=> {
+				cursor.setAttribute("style", "top: "+(e.pageY - scrollY)+"px; left:" +(e.pageX)+"px")
+				//cursor.setAttribute("style", "top: "+e.pageY+"px; left: "+e.pageX+"px")
+			})
+
+			document.addEventListener('click', () => {
+				cursor.classList.add("expand");
+
+				setTimeout(() => {
+					cursor.classList.remove("expand");
+				}, 500)
+			})
+
+		</script>
+
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><span class="title">Hana Choi</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li><a href="https://www.linkedin.com/in/hanachoi-design/">LinkedIn</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+					<div class="inner">
+						<section>
+							<span class="image main"><img src="images/Youtube_Slide1.jpg"/></span>														  
+							<span class="image main"><img src="images/Youtube_Slide2.jpg"/></span>
+							<span class="image main"><img src="images/Youtube_Slide3.jpg"/></span>
+							<span class="image main"><img src="images/Youtube_Slide4.jpg"/></span>
+							<span class="image main"><img src="images/Youtube_Slide5.jpg"/></span>
+							<span class="image main"><img src="images/Youtube_Slide6.jpg"/></span>
+							<span class="image main"><img src="images/Youtube_Slide7.jpg"/></span>
+							<span class="image main"><img src="images/Youtube_Slide8.jpg"/></span>
+							<span class="image main"><img src="images/Youtube_Slide9.jpg"/></span>
+							<span class="image main"><img src="images/Youtube_Slide10.jpg"/></span>
+							<span class="image main"><img src="images/Youtube_Slide11.jpg"/></span>
+							<span class="image main"><img src="images/Youtube_Slide12.jpg"/></span>
+							<span class="image main"><img src="images/Youtube_Slide13.jpg"/></span>
+							<span class="image main"><img src="images/Youtube_Slide14.jpg"/></span>
+						</section>
+					</div>
+				</div>
+				
+
+<!--Footer-->
+<body>
+	<footer id="footer">
+  	<div class="inner">
+    	<a href="link.html" class="arrow">&larr;</a>
+    	<p>🖥️ Designed and coded by Hana Choi • 2023</p>
+    	<a href="google.html" class="arrow">&rarr;</a>
+  	</div>
+	</footer>
+</body>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
