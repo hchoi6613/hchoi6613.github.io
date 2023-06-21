@@ -1,0 +1,168 @@
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Hana Choi</title>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://kit.fontawesome.com/fbe720546c.js" crossorigin="anonymous"></script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<div class="cursor"></div>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- For cursor -->
+		<script>
+			const cursor = document.querySelector('.cursor');
+
+			document.addEventListener('mousemove', e=> {
+				cursor.setAttribute("style", "top: "+(e.pageY - scrollY)+"px; left:" +(e.pageX)+"px")
+				//cursor.setAttribute("style", "top: "+e.pageY+"px; left: "+e.pageX+"px")
+			})
+
+			document.addEventListener('click', () => {
+				cursor.classList.add("expand");
+
+				setTimeout(() => {
+					cursor.classList.remove("expand");
+				}, 500)
+			})
+
+		</script>
+		
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><span class="title">Hana Choi</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li><a href="https://www.linkedin.com/in/hanachoi-design/">LinkedIn</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>Good to see you! 👋 I'm Hana, a strong visual and creative designer.</h1>
+								<p>
+								</p>
+							</header>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="images/Chase_Cover.png" alt="" />
+									</span>
+									<a href="chase.html">
+										<!--<h2>???</h2>-->
+										<div class="content">
+											<p>Chase Bank UI Redesign</p>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/Link_Cover.png" alt="" />
+									</span>
+									<a href="link.html">
+										<!--<h2>???</h2>-->
+										<div class="content">
+											<p>Link Logistics Real Estate</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/Youtube_cover.png" alt="" />
+									</span>
+									<a href="youtube.html">
+										<!--<h2>???</h2>-->
+										<div class="content">
+											<p>Youtube Music UI Redesign</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/Google_cover.png" alt="" />
+									</span>
+									<a href="google.html">
+										<!--<h2>???</h2>-->
+										<div class="content">
+											<p>The Real Google Translate</p>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="images/Jeju_Cover.png" alt="" />
+									</span>
+									<a href="jeju.html">
+										<!--<h2>???</h2>-->
+										<div class="content">
+											<p>Jeju Volcanic Island Brand Identity</p>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="images/RISD_Cover.png" alt="" />
+									</span>
+									<a href="RISD.html">
+										<!--<h2>???</h2>-->
+										<div class="content">
+											<p>RISD Museum Brand Identity</p>
+										</div>
+									</a>
+								</article>
+							
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section>
+							<p>🖥️ Designed and coded by Hana Choi • 2023</p>
+						<section>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
