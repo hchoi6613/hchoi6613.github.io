@@ -1,189 +1,226 @@
-
 <!DOCTYPE HTML>
-
 <html>
-	<head>
-		<title>Hana Choi</title>
-		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="https://kit.fontawesome.com/fbe720546c.js" crossorigin="anonymous"></script>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<div class="cursor"></div>
-	</head>
+<head>
+  <title>Hana Choi</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="https://kit.fontawesome.com/fbe720546c.js" crossorigin="anonymous"></script>
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <div class="cursor"></div>
+</head>
 
-	<body class="is-preload">
+<body class="is-preload">
 
-		<!-- For cursor -->
-		<script>
-			const cursor = document.querySelector('.cursor');
+<!-- For cursor -->
+<script>
+  const cursor = document.querySelector('.cursor');
 
-			document.addEventListener('mousemove', e=> {
-				cursor.setAttribute("style", "top: "+(e.pageY - scrollY)+"px; left:" +(e.pageX)+"px")
-				//cursor.setAttribute("style", "top: "+e.pageY+"px; left: "+e.pageX+"px")
-			})
+  document.addEventListener('mousemove', e=> {
+    cursor.setAttribute("style", "top: "+(e.pageY - scrollY)+"px; left:" +(e.pageX)+"px")
+    //cursor.setAttribute("style", "top: "+e.pageY+"px; left: "+e.pageX+"px")
+  })
 
-			document.addEventListener('click', () => {
-				cursor.classList.add("expand");
+  document.addEventListener('click', () => {
+    cursor.classList.add("expand");
 
-				setTimeout(() => {
-					cursor.classList.remove("expand");
-				}, 500)
-			})
+    setTimeout(() => {
+      cursor.classList.remove("expand");
+    }, 500)
+  })
 
-		</script>
-		
-		<!-- Wrapper -->
-			<div id="wrapper">
+</script>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+<!-- Wrapper -->
+<div id="wrapper">
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><span class="title">Hana Choi</span>
-								</a>
+  <!-- Header -->
+  <header id="header">
+    <div class="inner">
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <span class="symbol"><span class="title">Hana Choi</span>
+      </a>
 
-						</div>
-					</header>
+      <!-- Nav -->
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+        </ul>
+      </nav>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="resume.html">Resume</a></li>
-							<li><a href="https://www.linkedin.com/in/hanachoi-design/">LinkedIn</a></li>
-						</ul>
-					</nav>
+    </div>
+  </header>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>Good to see you! 👋 I'm Hana, a strong visual and creative designer.</h1>
-								<p>
-								</p>
-							</header>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/Chase_Cover.png" alt="" />
-									</span>
-									<a href="chase.html">
-										<!--<h2>???</h2>-->
-										<div class="content">
-											<p>Chase Bank UI Redesign</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/Link_Cover.png" alt="" />
-									</span>
-									<a href="link.html">
-										<!--<h2>???</h2>-->
-										<div class="content">
-											<p>Link Logistics Real Estate</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/Youtube_cover_1.png" alt="" />
-									</span>
-									<a href="youtube.html">
-										<!--<h2>???</h2>-->
-										<div class="content">
-											<p>Youtube Music UI Redesign</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/Google_cover_2.png" alt="" />
-									</span>
-									<a href="google.html">
-										<!--<h2>???</h2>-->
-										<div class="content">
-											<p>The Real Google Translate</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/Jeju_Cover.png" alt="" />
-									</span>
-									<a href="jeju.html">
-										<!--<h2>???</h2>-->
-										<div class="content">
-											<p>Jeju Volcanic Island Brand Identity</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/RISD_Cover.png" alt="" />
-									</span>
-									<a href="RISD.html">
-										<!--<h2>???</h2>-->
-										<div class="content">
-											<p>RISD Museum Brand Identity</p>
-										</div>
-									</a>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/Cinema_Cover.png" alt="" />
-									</span>
-									<a href="Cinema.html">
-										<!--<h2>???</h2>-->
-										<div class="content">
-											<p>Cinema 4D Playground</p>
-										</div>
-									</a>
-								</article>
-																<article class="style2">
-									<span class="image">
-										<img src="images/Milkyway_Cover.png" alt="" />
-									</span>
-									<a href="milkyway.html">
-										<!--<h2>???</h2>-->
-										<div class="content">
-											<p>Milky Way</p>
-										</div>
-									</a>
-								</article>
-							</section>
-						</div>
-					</div>
+  <!-- Menu -->
+  <nav id="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="https://www.linkedin.com/in/hanachoi-design/">LinkedIn</a></li>
+    </ul>
+  </nav>
 
-				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<section>
-							<p>🖥️ Designed and coded by Hana Choi • 2023</p>
-						<section>
-					</div>
-				</footer>
+  <!-- Main -->
+  <div id="main">
+    <div class="inner">
+      <header>
+        <h1>Good to see you! 👋 I'm Hana, a strong visual and creative designer.</h1>
+        <p></p>
+        <div>
+          <button onclick="filter('all')">All</button>
+          <button onclick="filter('ui')">UI</button>
+          <button onclick="filter('branding')">Branding</button>
+          <button onclick="filter('fun')">Fun</button>
+        </div>
+      </header>
+      <section class="tiles">
+        <article class="style1">
+          <span class="image">
+            <img src="images/Chase_Cover.png" alt="" />
+          </span>
+          <a href="chase.html">
+            <!--<h2>???</h2>-->
+            <div class="content">
+              <p>Chase Bank UI Redesign</p>
+            </div>
+          </a>
+        </article>
+        <article class="style2">
+          <span class="image">
+            <img src="images/Link_Cover.png" alt="" />
+          </span>
+          <a href="link.html">
+            <!--<h2>???</h2>-->
+            <div class="content">
+              <p>Link Logistics Real Estate</p>
+            </div>
+          </a>
+        </article>
+        <article class="style1">
+          <span class="image">
+            <img src="images/Youtube_cover_1.png" alt="" />
+          </span>
+          <a href="youtube.html">
+            <!--<h2>???</h2>-->
+            <div class="content">
+              <p>Youtube Music UI Redesign</p>
+            </div>
+          </a>
+        </article>
+        <article class="style1">
+          <span class="image">
+            <img src="images/Google_cover_2.png" alt="" />
+          </span>
+          <a href="google.html">
+            <!--<h2>???</h2>-->
+            <div class="content">
+              <p>The Real Google Translate</p>
+            </div>
+          </a>
+        </article>
+        <article class="style2">
+          <span class="image">
+            <img src="images/Jeju_Cover.png" alt="" />
+          </span>
+          <a href="jeju.html">
+            <!--<h2>???</h2>-->
+            <div class="content">
+              <p>Jeju Volcanic Island Brand Identity</p>
+            </div>
+          </a>
+        </article>
+        <article class="style2">
+          <span class="image">
+            <img src="images/RISD_Cover.png" alt="" />
+          </span>
+          <a href="RISD.html">
+            <!--<h2>???</h2>-->
+            <div class="content">
+              <p>RISD Museum Brand Identity</p>
+            </div>
+          </a>
+        </article>
+        <article class="style3">
+          <span class="image">
+            <img src="images/Cinema_Cover.png" alt="" />
+          </span>
+          <a href="Cinema.html">
+            <!--<h2>???</h2>-->
+            <div class="content">
+              <p>Cinema 4D Exercises</p>
+            </div>
+          </a>
+        </article>
+        <article class="style3">
+          <span class="image">
+            <img src="images/Milkyway_Cover.png" alt="" />
+          </span>
+          <a href="milkyway.html">
+            <!--<h2>???</h2>-->
+            <div class="content">
+              <p>Milky Way</p>
+            </div>
+          </a>
+        </article>
+      </section>
+    </div>
+  </div>
 
-			</div>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <section>
+        <p>🖥️ Designed and coded by Hana Choi • 2023</p>
+      <section>
+    </div>
+  </footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+</div>
 
-	</body>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+
+  function filter(category) {
+    var articles = document.getElementsByClassName('tiles')[0].getElementsByTagName('article');
+    
+    for (var i = 0; i < articles.length; i++) {
+      var article = articles[i];
+      
+      if (category === 'all') {
+        article.style.display = 'block';
+      } else if (category === 'ui') {
+        if (article.classList.contains('style1')) {
+          article.style.display = 'block';
+        } else {
+          article.style.display = 'none';
+        }
+      } else if (category === 'branding') {
+        if (article.classList.contains('style2')) {
+          article.style.display = 'block';
+        } else {
+          article.style.display = 'none';
+        }
+      } else if (category === 'fun') {
+        if (article.classList.contains('style3')) {
+          article.style.display = 'block';
+        } else {
+          article.style.display = 'none';
+        }
+      }
+    }
+  }
+  
+</script>
+
+</body>
 </html>
