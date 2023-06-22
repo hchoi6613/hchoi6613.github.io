@@ -180,18 +180,7 @@ body {
 	animation: cursorAnim3 .5s forwards;
 	border: 1px solid grey;
 }
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh; /* Adjust the height of the container as needed */
-  }
-
-  .video-container video {
-    max-width: 100%;
-    max-height: 100%;
-  }
+  
 
 /*Back to the top button*/
 #back-to-top-btn{
@@ -2545,6 +2534,26 @@ input, select, textarea {
 				}
 
 			}
+
+/*video*/
+.video-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	margin-bottom: 40px;
+  }
+  
+  .video-container video {
+	width: 100%;
+	height: 100%;
+  }
+  
+  @media screen and (max-width: 736px) {
+	.video-container {
+	  margin: 0 0 2em 0;
+	}
+  }
 
 /* Table */
 
