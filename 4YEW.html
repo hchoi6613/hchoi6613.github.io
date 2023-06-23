@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Hana Choi about</title>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<div class="cursor"></div>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- For cursor -->
+		<script>
+			const cursor = document.querySelector('.cursor');
+
+			document.addEventListener('mousemove', e=> {
+				cursor.setAttribute("style", "top: "+(e.pageY - scrollY)+"px; left:" +(e.pageX)+"px")
+				//cursor.setAttribute("style", "top: "+e.pageY+"px; left: "+e.pageX+"px")
+			})
+
+			document.addEventListener('click', () => {
+				cursor.classList.add("expand");
+
+				setTimeout(() => {
+					cursor.classList.remove("expand");
+				}, 500)
+			})
+
+		</script>
+
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><span class="title">Hana Choi</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li><a href="https://www.linkedin.com/in/hanachoi-design/">LinkedIn</a></li>
+						</ul>
+					</nav>
+					<hr />
+
+				<!-- Main -->
+				<div id="main">
+					<div class="inner">
+						<section>
+							<!DOCTYPE html>
+
+<body>
+
+		<style>
+	
+			.prev,
+			.next {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: auto;
+				padding: 16px;
+				color: white;
+				font-weight: bold;
+				font-size: 20px;
+				transition: background-color 0.3s ease;
+			}
+	
+			.prev:hover,
+			.next:hover {
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+	
+			.prev {
+				left: 0;
+			}
+	
+			.next {
+				right: 0;
+			}
+		</style>
+
+<div id="main">
+	<div class="inner">
+		<div class="row">
+		<h2>4YEW Juice & Smoothie Bar</h2>
+		</div>
+		<div class="row">
+			<div class="col-6 col-12-medium">
+		<ul class="alt">
+			<li>Tools: Adobe CC</li>
+			<li>Role: Freelance Visual and Brand Designer</li>
+			<li>Timeline: 3 months</li>
+		</ul>
+		</div>
+</div>
+
+<body>
+	<span class="image main"><img src="4YEW/4YEW_Slide1.gif"/></span>
+	<span class="image main"><img src="4YEW/4YEW_Slide2.jpg"/></span>														  
+	<span class="image main"><img src="4YEW/4YEW_Slide3.gif"/></span>												  
+		<div class="row">
+			<section>
+				<span class="image left"><img src="4YEW/4YEW_Slide4.gif"/></span>
+				<span class="image right"><img src="4YEW/4YEW_Slide5.gif"/></span>
+			</section>
+		</div>
+		<div class="row">
+			<section>
+				<span class="image left"><img src="4YEW/4YEW_Slide6.jpg"/></span>
+				<span class="image right"><img src="4YEW/4YEW_Slide7.jpg"/></span>
+			</section>
+		</div>
+		
+		<span class="image main"><img src="4YEW/4YEW_Slide8.jpg"/></span>
+		<span class="image main"><img src="4YEW/4YEW_Slide9.gif"/></span>												  
+		<div class="row">
+			<section>
+				<span class="image left"><img src="4YEW/4YEW_Slide10.gif"/></span>
+				<span class="image right"><img src="4YEW/4YEW_Slide10.jpg"/></span>
+			</section>
+		</div>
+		<div class="row">
+			<section>
+				<span class="image left"><img src="4YEW/4YEW_Slide11.gif"/></span>
+				<span class="image right"><img src="4YEW/4YEW_Slide11.jpg"/></span>
+			</section>
+		</div>
+		<div class="row">
+			<section>
+				<span class="image left"><img src="4YEW/4YEW_Slide12.gif"/></span>
+				<span class="image right"><img src="4YEW/4YEW_Slide12.jpg"/></span>
+			</section>
+		</div>
+		<span class="image main"><img src="4YEW/4YEW_Slide13.gif"/></span>												  
+
+		<script>
+			const slideshowContainers = document.querySelectorAll('.slideshow-container');
+	
+			slideshowContainers.forEach((container, index) => {
+				let slideIndex = 0;
+            const slides = container.querySelectorAll('.slide-image');
+            const prevButton = container.querySelector('.prev');
+            const nextButton = container.querySelector('.next');
+            showSlide(slideIndex);
+
+            function showSlide(index) {
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = 'none';
+                }
+
+                slides[index].style.display = 'block';
+            }
+
+            function changeSlide(n, containerIndex) {
+                slideIndex += n;
+
+                if (slideIndex < 0) {
+                    slideIndex = slides.length - 1;
+                } else if (slideIndex >= slides.length) {
+                    slideIndex = 0;
+                }
+
+                showSlide(slideIndex);
+            }
+
+            prevButton.addEventListener('click', () => {
+                changeSlide(-1, index);
+            });
+
+            nextButton.addEventListener('click', () => {
+                changeSlide(1, index);
+            });
+        });
+		</script>
+
+
+</body>
+</html>
+
+						</section>
+					</div>
+				</div>
+				
+<!--Footer-->
+<body>
+	<footer id="footer">
+  	<div class="inner">
+    	<a href="milkyway.html" class="arrow">&larr;</a>
+		  <p>🖥️ Designed and coded by Hana Choi • 2023</p>
+		  <a href="Cinema.html" class="arrow">&rarr;</a>
+  	</div>
+	</footer>
+</body>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
