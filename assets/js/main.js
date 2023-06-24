@@ -194,4 +194,44 @@
 
 			});
 
+
+	//darkmode
+	const darkModeToggle = document.getElementById('darkModeToggle');
+	const body = document.body;
+	const footer = document.getElementById('footer');
+	const DARK_MODE_KEY = 'darkModeEnabled';
+	
+	// Check if user's preference is stored in localStorage
+	const isDarkModeEnabled = localStorage.getItem(DARK_MODE_KEY) === 'true';
+	darkModeToggle.checked = isDarkModeEnabled;
+	
+	// Apply the stored preference on page load
+	if (isDarkModeEnabled) {
+	  enableDarkMode();
+	} else {
+	  disableDarkMode();
+	}
+	
+	darkModeToggle.addEventListener('change', function () {
+	  if (darkModeToggle.checked) {
+		enableDarkMode();
+	  } else {
+		disableDarkMode();
+	  }
+	});
+	
+	function enableDarkMode() {
+	  body.classList.add('dark-mode');
+	  footer.classList.add('dark-mode');
+	  localStorage.setItem(DARK_MODE_KEY, 'true'); // Store the preference
+	}
+	
+	function disableDarkMode() {
+	  body.classList.remove('dark-mode');
+	  footer.classList.remove('dark-mode');
+	  localStorage.setItem(DARK_MODE_KEY, 'false'); // Store the preference
+	}
+	
+
+
 })(jQuery);
