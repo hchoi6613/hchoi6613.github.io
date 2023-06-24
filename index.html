@@ -6,7 +6,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <script src="https://kit.fontawesome.com/fbe720546c.js" crossorigin="anonymous"></script>
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <div class="cursor"></div>
 </head>
@@ -21,9 +20,17 @@
     <div class="inner">
 
       <!-- Logo -->
-      <a href="index.html" class="logo">
-        <span class="symbol"><span class="title">Hana Choi</span>
-      </a>
+      <div class="header">
+        <a href="index.html" class="logo">
+          <span class="symbol">
+            <span class="title">Hana Choi</span>
+          </span>
+        </a>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
 
       <!-- Nav -->
       <nav>
@@ -83,7 +90,7 @@
         </article>
         <article class="style1">
           <span class="image">
-            <img src="images/Youtube_cover_1.png" alt="" />
+            <img src="images/youtube_cover.png" alt="" />
           </span>
           <a href="youtube.html">
             <!--<h2>???</h2>-->
@@ -105,7 +112,7 @@
         </article>
         <article class="style2">
           <span class="image">
-            <img src="images/Jeju_Cover.png" alt="" />
+            <img src="images/jeju_cover.png" alt="" />
           </span>
           <a href="jeju.html">
             <!--<h2>???</h2>-->
@@ -166,10 +173,13 @@
   <footer id="footer">
     <div class="inner">
       <section>
-        <p>🖥️ Designed and coded by Hana Choi • 2023</p>
-      <section>
+        <div class="footer-content">
+          <p>🖥️ Designed and coded by Hana Choi • 2023</p>
+          </label>
+        </div>
+      </section>
     </div>
-  </footer>
+  </footer>  
 
 </div>
 
