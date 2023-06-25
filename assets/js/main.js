@@ -19,6 +19,44 @@
 	  }, 500)
 	})
 	
+	//slideshows
+	const slideshowContainers = document.querySelectorAll('.slideshow-container');
+	
+	slideshowContainers.forEach((container, index) => {
+		let slideIndex = 0;
+	const slides = container.querySelectorAll('.slide-image');
+	const prevButton = container.querySelector('.prev');
+	const nextButton = container.querySelector('.next');
+	showSlide(slideIndex);
+
+	function showSlide(index) {
+		for (let i = 0; i < slides.length; i++) {
+			slides[i].style.display = 'none';
+		}
+
+		slides[index].style.display = 'block';
+	}
+
+	function changeSlide(n, containerIndex) {
+		slideIndex += n;
+
+		if (slideIndex < 0) {
+			slideIndex = slides.length - 1;
+		} else if (slideIndex >= slides.length) {
+			slideIndex = 0;
+		}
+
+		showSlide(slideIndex);
+	}
+
+	prevButton.addEventListener('click', () => {
+		changeSlide(-1, index);
+	});
+
+	nextButton.addEventListener('click', () => {
+		changeSlide(1, index);
+	});
+});
 
 	// Breakpoints.
 		breakpoints({
