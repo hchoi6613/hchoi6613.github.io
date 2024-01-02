@@ -189,7 +189,7 @@ footer, header, hgroup, menu, nav, section {
 		transition-duration: 100ms;
 		transition-timing-function: ease-out;
 		animation: cursorAnim .5s infinite alternate;
-		z-index: 9999;
+		z-index: 99999;
 	  }
 
 	  .cursor::after {
