@@ -109,6 +109,10 @@ footer, header, hgroup, menu, nav, section {
   .dark-mode #footer .arrow {
 	color: #D9D9D9; /* Set the desired color for the arrow */
   }
+
+  .arrow{
+	font-size:60px;
+  }
   
 /* CSS for slideshow container */
     .slideshow-container {
