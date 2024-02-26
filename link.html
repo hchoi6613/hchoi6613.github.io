@@ -45,55 +45,6 @@
     }
 
   </style>
-  <script>
-    function toggleBlur() {
-      var password = document.getElementById("password").value;
-      var images = document.getElementsByClassName("slide-image");
-      var modal = document.getElementById("modal");
-      
-      if (password === "hanadesign") { // Replace "secret" with your desired password
-        for (var i = 0; i < images.length; i++) {
-          images[i].style.filter = "none";
-        }
-        modal.style.display = "none"; // Hide the modal
-        localStorage.setItem("passwordEntered", "true"); // Store the state in localStorage
-      } else {
-        alert("Incorrect password. Please try again.");
-      }
-    }
-    
-    function showModal() {
-      var modal = document.getElementById("modal");
-      var passwordEntered = localStorage.getItem("passwordEntered");
-      
-      if (passwordEntered === null) { // Check if password is not entered before
-        modal.style.display = "block"; // Show the modal
-      }
-    }
-    
-    function showModal() {
-      var modal = document.getElementById("modal");
-      modal.style.display = "block"; // Show the modal
-    }
-	
-  </script>
-</head>
-<body>
-  <div id="modal" class="modal">
-    <div class="modal-content">
-	<h3>Please wait for the page to fully load before typing in the password (thank you!)</h3>
-      <input type="password" id="password" placeholder="Enter password">
-      <br>
-      <button onclick="toggleBlur()">Submit</button>
-    </div>
-  </div>
-  
-  <!-- Add your website content here -->
-  
-  <script>
-    showModal(); // Show the modal when the page loads
-  </script>
-
 
 		<!-- Wrapper -->
 			<div id="wrapper">
