@@ -1,3 +1,8 @@
+/* Default Font Color */
+body .card-text .card-title {
+    color: #484848;
+}
+
 /* Grid Container */
 .grid-container {
     display: grid;
@@ -50,6 +55,10 @@
 .navbar-brand {
     color: #926AC2 !important;
     font-size: 30px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #484848 !important;
 }
 
 .navbar-nav {
