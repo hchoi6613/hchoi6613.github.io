@@ -1,6 +1,31 @@
 /* Default Font Color */
-body .card-text .card-title {
+body {
     color: #484848;
+}
+
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    color: #484848;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Ensure cards have the same height and width */
+.card-equal {
+    height: 100%;
+    width: 100%;
 }
 
 /* Grid Container */
@@ -38,7 +63,6 @@ body .card-text .card-title {
     60% { transform: rotate(0deg); }
     100% { transform: rotate(0deg); }
 }
-
 .wave-hand {
     display: inline-block;
     transform-origin: 70% 70%;
@@ -53,14 +77,47 @@ body .card-text .card-title {
 
 /* Navbar */
 .navbar-brand {
-    color: #926AC2 !important;
+    color: #926AC2;
     font-size: 30px;
 }
 
 .navbar-nav .nav-link.active {
-    color: #484848 !important;
+    color: #484848;
 }
 
-.navbar-nav {
-    margin-left: auto; /* Pushes the navbar items to the right */
+/* Flexbox Utility Classes */
+.d-flex {
+    display: flex !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.min-vh-100 {
+    min-height: 100vh !important;
+}
+
+.flex-grow-1 {
+    flex-grow: 1 !important;
+}
+
+.mt-auto {
+    margin-top: auto !important;
+}
+
+/* Link Hover Color */
+a:hover, .nav-link:hover {
+    color: #926AC2 !important;
+}
+
+/* Button Color */
+.btn-primary {
+    background-color: #926AC2;
+    border-color: #926AC2;
+}
+
+.btn-primary:hover {
+    background-color: #7a52a1;
+    border-color: #7a52a1;
 }

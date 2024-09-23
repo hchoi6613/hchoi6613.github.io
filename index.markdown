@@ -9,4 +9,4 @@ My name is Hana, a Visual and a UX designer. I graduated from Rhode Island Schoo
 
 I'm passionate about building a lasting solution for B2C businesses.<br>
 
-I'm currently a Junior Visual Designer @ [SO Dsgn](https://www.so-design.co/), looking for continuous opportunities to grow and learn!<br>
+I'm currently a Junior Visual Designer @ <a style="color: #7a52a1;" href="https://www.so-design.co/">SO Dsgn</a>, looking for continuous opportunities to grow and learn!<br>
