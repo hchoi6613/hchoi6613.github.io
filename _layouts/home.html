@@ -19,7 +19,7 @@ title: home
                 <img src="{{ site.baseurl }}{{ post.cover_image }}" class="card-img-top" alt="{{ post.title }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ post.title }}</h5>
-                    <p class="card-text">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+                    <p class="card-text">{{ post.sub_header | strip_html | truncate: 100 }}</p>
                     <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-primary">Read More</a>
                 </div>
             </div>
