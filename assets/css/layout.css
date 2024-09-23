@@ -6,6 +6,7 @@
     align-items: center; 
     position: relative;
     margin-bottom: 50px;
+    margin-left: 12px;
 }
 
 /* Flexbox Utility Classes */
