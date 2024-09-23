@@ -1,0 +1,57 @@
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 30px;
+    align-items: center; 
+    position: relative;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    padding: 10px;
+}
+
+/* Centered Content */
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Wave Animation */
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.wave-hand {
+    display: inline-block;
+    transform-origin: 70% 70%;
+    animation: wave 2s infinite;
+}
+
+/* Typography */
+.young-serif-font,
+.navbar-brand {
+    font-family: 'Young Serif', serif;
+}
+
+/* Navbar */
+.navbar-brand {
+    color: #926AC2 !important;
+    font-size: 30px;
+}
+
+.navbar-nav {
+    margin-left: auto; /* Pushes the navbar items to the right */
+}
