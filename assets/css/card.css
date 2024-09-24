@@ -3,6 +3,12 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
@@ -23,13 +29,8 @@
     width: 100%;
 }
 
-/* Button Color */
-.btn-primary {
-    background-color: #926AC2;
-    border-color: #926AC2;
-}
-
-.btn-primary:hover {
-    background-color: #7a52a1;
-    border-color: #7a52a1;
+/* Pill badge */
+.bg-purple {
+    background-color: #6f42c1;
+    color: #fff;
 }
