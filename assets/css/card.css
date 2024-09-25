@@ -1,36 +1,37 @@
-/* Card */
+/* Card styles */
 .card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    /* Add transition effects for transform and box-shadow properties */
     transition: transform 0.3s, box-shadow 0.3s;
+    /* Add a subtle shadow to the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Card hover effect */
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Move the card slightly up and to the left */
+    transform: translate(-5px, -5px);
+    /* Increase the shadow intensity */
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
 }
 
-.card-body {
-    color: #484848;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+/* Image inside the card */
+.card img {
+    /* Add transition effect for opacity */
+    transition: opacity 0.3s;
 }
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
+/* Image hover effect */
+.card:hover img {
+    /* Make the image slightly transparent */
+    opacity: 0.8;
 }
 
-/* Ensure cards have the same height and width */
-.card-equal {
-    height: 100%;
-    width: 100%;
-}
-
-/* Pill badge */
+/* Pill badge styles */
 .bg-purple {
+    /* Set background color to purple */
     background-color: #6f42c1;
+    /* Set text color to white */
     color: #fff;
+    /* Add a margin at the top */
+    margin-top: 10px;
 }
