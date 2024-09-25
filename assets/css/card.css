@@ -4,6 +4,10 @@
     transition: transform 0.3s, box-shadow 0.3s;
     /* Add a subtle shadow to the card */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Ensure the card is positioned relative to the pseudo-element */
+    position: relative;
+    /* Ensure the overlay doesn't overflow the card */
+    overflow: hidden;
 }
 
 /* Card hover effect */
@@ -16,14 +20,34 @@
 
 /* Image inside the card */
 .card img {
-    /* Add transition effect for opacity */
-    transition: opacity 0.3s;
+    /* Ensure the image is positioned relative to the pseudo-element */
+    display: block;
+    /* Make the image take the full width of the card */
+    width: 100%;
+}
+
+/* Pseudo-element for darkening effect */
+.card::after {
+    /* Create an empty content for the pseudo-element */
+    content: '';
+    /* Position the pseudo-element absolutely within the card */
+    position: absolute;
+    /* Align the pseudo-element to the top-left corner */
+    top: 0;
+    left: 0;
+    /* Make the pseudo-element cover the entire card */
+    width: 100%;
+    height: 100%;
+    /* Initially transparent background */
+    background: rgba(0, 0, 0, 0);
+    /* Add transition effect for background property */
+    transition: background 0.3s;
 }
 
 /* Image hover effect */
-.card:hover img {
-    /* Make the image slightly transparent */
-    opacity: 0.8;
+.card:hover::after {
+    /* Darken the background on hover */
+    background: rgba(0, 0, 0, 0.1);
 }
 
 /* Pill badge styles */
