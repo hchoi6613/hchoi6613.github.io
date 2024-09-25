@@ -47,7 +47,39 @@
 /* Image hover effect */
 .card:hover::after {
     /* Darken the background on hover */
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Text inside the card */
+.card .card-text {
+    /* Position the text absolutely within the card */
+    position: absolute;
+    /* Center the text horizontally and vertically */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Initially hide the text */
+    opacity: 0;
+    /* Set text color to white */
+    color: white;
+    /* Add transition effect for opacity */
+    transition: opacity 0.3s;
+    /* Ensure the text is above the pseudo-element */
+    z-index: 2;
+    /* Make the text span the entire width of the card */
+    width: 100%;
+    /* Center the text */
+    text-align: center;
+    /* Prevent text overflow */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Text hover effect */
+.card:hover .card-text {
+    /* Fade in the text on hover */
+    opacity: 1;
 }
 
 /* Pill badge styles */
