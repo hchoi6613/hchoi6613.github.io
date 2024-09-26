@@ -10,7 +10,8 @@ body {
     gap: 30px;
     align-items: center; 
     position: relative;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 /* Flexbox Utility Classes */
@@ -30,9 +31,9 @@ body {
     flex-grow: 1 !important;
 }
 
-.mt-auto {
+/* .mt-auto {
     margin-top: auto !important;
-}
+} */
 
 /* Link Hover Color */
 a:hover {
