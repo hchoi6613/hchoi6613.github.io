@@ -9,7 +9,9 @@ p {
 
 /* Custom container width */
 .container {
-    width: 90%;
+    width: 70%;
+    /* padding-left: 100px;
+    padding-right: 100px; */
 }
 
 /* Grid Container */
