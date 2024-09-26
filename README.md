@@ -20,15 +20,17 @@ To run locally
     ```md
     ---
     layout: post
-    title:  "4yew!"
-    cover_image: /assets/covers/4yew.png
-    excerpt: 4YEW Juice & Smoothie Bar
+    title: RISD Museum Rebranding
+    cover_image: assets/covers/risd-museum.jpg
+    timeline: Spring 2022
+    tags:
+    - Branding
     ---
     ```
-
+    - `layout` must be `post` to utilize the post layout
     - `title` is the main title of the card
     - `cover_image` is the location of where the image is located
-    - `excerpt` is optional but provides the subheading. 
-        - If it is not in the metadata, then it will use the first sentences of the markdown content.
+    - `timeline` is the time spent or duration of the project
+    - `tags` is an optional list that is displayed as pills
 
 3. All of the pages are written in markdown. For documentation on how to write in markdown, see https://www.markdownguide.org/
