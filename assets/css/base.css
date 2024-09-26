@@ -14,6 +14,20 @@ body {
     margin-bottom: 100px;
 }
 
+/* Adjust grid layout for mobile screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .grid-container img {
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* Flexbox Utility Classes */
 .d-flex {
     display: flex !important;

@@ -8,6 +8,8 @@
     position: relative;
     /* Ensure the overlay doesn't overflow the card */
     overflow: hidden;
+    /* Set the height to 75% of its current height */
+    height: 100%;
 }
 
 /* Card hover effect */
@@ -24,6 +26,9 @@
     display: block;
     /* Make the image take the full width of the card */
     width: 100%;
+    /* Adjust the height of the image to fit the new card height */
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Pseudo-element for darkening effect */
