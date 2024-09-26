@@ -7,6 +7,11 @@ p {
     font-size: 1.2rem;
 }
 
+/* Custom container width */
+.container {
+    width: 90%;
+}
+
 /* Grid Container */
 .grid-container {
     display: grid;
