@@ -1,4 +1,5 @@
 # Hana's Portfolio
+[![Deploy Jekyll site to Pages](https://github.com/hchoi6613/hchoi6613.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/hchoi6613/hchoi6613.github.io/actions/workflows/jekyll.yml)
 
 ## Requirements
 Setup Jekyll by installing the required packages https://jekyllrb.com/docs/installation/
