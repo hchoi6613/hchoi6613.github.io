@@ -8,7 +8,6 @@
     position: relative;
     /* Ensure the overlay doesn't overflow the card */
     overflow: hidden;
-    /* Set the height to 75% of its current height */
     height: 100%;
 }
 
@@ -22,13 +21,10 @@
 
 /* Image inside the card */
 .card img {
-    /* Ensure the image is positioned relative to the pseudo-element */
-    display: block;
-    /* Make the image take the full width of the card */
     width: 100%;
-    /* Adjust the height of the image to fit the new card height */
-    height: 100%;
+    height: 300px;
     object-fit: cover;
+    object-position: center;
 }
 
 /* Pseudo-element for darkening effect */
@@ -52,7 +48,7 @@
 /* Image hover effect */
 .card:hover::after {
     /* Darken the background on hover */
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 /* Text inside the card */
@@ -75,10 +71,6 @@
     width: 100%;
     /* Center the text */
     text-align: center;
-    /* Prevent text overflow */
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 /* Text hover effect */

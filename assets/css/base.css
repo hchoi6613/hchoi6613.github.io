@@ -10,7 +10,6 @@ body {
     gap: 30px;
     align-items: center; 
     position: relative;
-    margin-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -28,34 +27,16 @@ body {
     }
 }
 
-/* Flexbox Utility Classes */
-.d-flex {
-    display: flex !important;
-}
-
-.flex-column {
-    flex-direction: column !important;
-}
-
-.min-vh-100 {
-    min-height: 100vh !important;
-}
-
-.flex-grow-1 {
-    flex-grow: 1 !important;
-}
-
-/* .mt-auto {
-    margin-top: auto !important;
-} */
-
 /* Link Hover Color */
 a:hover {
     color: #926AC2 !important;
 }
 
 /* Typography */
-.young-serif-font,
 .navbar-brand {
+    font-family: 'Young Serif', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Young Serif', serif;
 }

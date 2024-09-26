@@ -1,13 +1,16 @@
 <div class="col">
-    <a href="{{ site.baseurl }}{{ post.url }}" class="card">
-        <img src="{{ post.cover_image | default: 'https://media.istockphoto.com/vectors/page-not-found-error-404vector-template-vector-id643266374?k=6&m=643266374&s=612x612&w=0&h=FRFai8A7svnignh3iARisxWEBe6EH2ZF_QA8Irv2lSQ=' }}" class="img-fluid" alt="{{post.title}}">
-        <div class="card-text young-serif-font fs-1">{{post.title}}</div>
-    </a>
-    {% if post.tags %}
-        <div class="mb-2">
-            {% for tag in post.tags %}
-                <span class="badge rounded-pill bg-purple">{{ tag }}</span>
-            {% endfor %}
-        </div>
-    {% endif %}
+    <div>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="card">
+            <img src="{{ post.cover_image | default: 'https://media.istockphoto.com/vectors/page-not-found-error-404vector-template-vector-id643266374?k=6&m=643266374&s=612x612&w=0&h=FRFai8A7svnignh3iARisxWEBe6EH2ZF_QA8Irv2lSQ=' }}"
+                alt="{{post.title}}">
+            <div class="card-text">
+                <h1>{{post.title}}</h1>
+            </div>
+        </a>
+        {% if post.tags %}
+        {% for tag in post.tags %}
+        <span class="badge rounded-pill bg-purple">{{ tag }}</span>
+        {% endfor %}
+        {% endif %}
+    </div>
 </div>
