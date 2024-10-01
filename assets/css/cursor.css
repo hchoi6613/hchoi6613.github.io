@@ -1,0 +1,44 @@
+/* Circle Cursor */
+.circle-cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(200, 200, 200, 0.8);
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1); /* Initial scale set to 1 */
+    transform-origin: center; /* Ensure scaling happens from the center */
+    transition: background-color 0.2s ease, width 0.2s ease-in, height 0.2s ease-in, transform 0.2s ease-in;
+}
+
+/* Change cursor color and size when hovering over links */
+a:hover .circle-cursor {
+    background-color: rgba(100, 100, 100, 0.8);
+    width: 30px; /* 50% bigger */
+    height: 30px; /* 50% bigger */
+}
+
+/* Ring animation */
+@keyframes ring {
+    0% {
+        width: 20px;
+        height: 20px;
+        border-width: 2px;
+        opacity: 1;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+        border-width: 0;
+        opacity: 0;
+    }
+}
+
+.ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(200, 200, 200, 0.8);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: ring 3s ease-out;
+}
