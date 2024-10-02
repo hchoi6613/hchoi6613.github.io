@@ -6,15 +6,14 @@
         </p>
         {% if page.layout == "post" %}
         <div class="d-flex justify-content-between">
-            {% if page.previous %}
-            <a href="{{ page.previous.url }}">&lt; Previous</a>
-            {% endif %}
             {% if page.next %}
-            <a href="{{ page.next.url }}">Next &gt;</a>
+            <a href="{{ page.next.url }}">&lt Previous</a>
+            {% endif %}
+            {% if page.previous %}
+            <a href="{{ page.previous.url }}" class="ms-auto">Next &gt</a>
             {% endif %}
         </div>
         {% endif %}
     </div>
-
 </footer>
 </div>

@@ -1,0 +1,13 @@
+footer .d-flex a {
+    text-decoration: none;
+    color: #484848;
+}
+
+footer .d-flex .ms-auto {
+    margin-left: auto;
+}
+
+footer a{
+    text-decoration: none;
+    color: #484848 !important;
+}
