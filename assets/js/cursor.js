@@ -27,18 +27,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.addEventListener('mouseup', (e) => {
         cursor.style.transform = 'translate(-50%, -50%) scale(1)'; // Reset to default size
-
+    
         const ring = document.createElement('div');
         ring.classList.add('ring');
-
-        // Calculate the ring's position relative to the cursor
-        const cursorRect = cursor.getBoundingClientRect();
-        ring.style.left = cursorRect.left + 'px';
-        ring.style.top  = cursorRect.top + 'px';
+        
+        // Calculate the position of the ring considering the scroll position
+        ring.style.left = (e.clientX + window.scrollX) + 'px';
+        ring.style.top = (e.clientY + window.scrollY) + 'px';
         ring.style.borderColor = cursor.style.backgroundColor;
-
+    
         document.body.appendChild(ring);
-
+    
         ring.addEventListener('animationend', () => {
             ring.remove(); // Remove the ring after the animation ends
         });
