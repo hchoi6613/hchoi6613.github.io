@@ -1,16 +1,16 @@
 /* Default Font Color */
 body {
     color: #484848;
-    cursor:none;
 }
+
+/* * {
+    cursor: none;
+} */
 
 p {
     font-size: 1.2rem;
 }
 
-a {
-    cursor: none;
-}
 
 /* Custom container width */
 .container {
