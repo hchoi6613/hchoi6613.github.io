@@ -1,11 +1,10 @@
-/* Default Font Color */
+* {
+    cursor: none;
+}
+
 body {
     color: #484848;
 }
-
-/* * {
-    cursor: none;
-} */
 
 p {
     font-size: 1.2rem;

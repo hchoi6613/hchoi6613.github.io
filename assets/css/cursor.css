@@ -4,8 +4,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: rgba(200, 200, 200, 0.8);
-    position: absolute;
-    pointer-events: none;
+    position: fixed;
     transform: translate(-50%, -50%) scale(1); /* Initial scale set to 1 */
     transform-origin: center; /* Ensure scaling happens from the center */
     transition: background-color 0.2s ease, width 0.2s ease-in, height 0.2s ease-in, transform 0.2s ease-in;
@@ -35,10 +34,9 @@ a:hover .circle-cursor {
 }
 
 .ring {
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
     border: 2px solid rgba(200, 200, 200, 0.8);
-    pointer-events: none;
     transform: translate(-50%, -50%);
     animation: ring 3s ease-out;
 }
