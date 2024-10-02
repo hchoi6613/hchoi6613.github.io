@@ -1,9 +1,20 @@
 <footer class="py-3 my-4 mt-5">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link disabled px-2 text-muted">Resume</a></li>
-        <li class="nav-item"><a href="#" class="nav-link active px-2 text-muted">LinkedIn</a></li> -->
-    </ul>
-    <p class="text-center text-muted">© <script>document.write(new Date().getFullYear());</script> Hana Choi</p>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
+    <div class="container">
+        <p class="text-center text-muted">©
+            <script>document.write(new Date().getFullYear());</script> Hana Choi
+        </p>
+        {% if page.layout == "post" %}
+        <div class="d-flex justify-content-between">
+            {% if page.previous %}
+            <a href="{{ page.previous.url }}">&lt; Previous</a>
+            {% endif %}
+            {% if page.next %}
+            <a href="{{ page.next.url }}">Next &gt;</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+
 </footer>
+</div>
