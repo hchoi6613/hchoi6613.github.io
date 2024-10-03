@@ -8,5 +8,4 @@ layout: home
 My name is Hana, a Visual and a UX designer. I graduated from Rhode Island School of Design on December 2023. <br>
 
 I'm passionate about building a lasting solution for B2C businesses.<br>
-
-I'm currently a Junior Visual Designer @ <a style="color: #7a52a1;" href="https://www.so-design.co/">SO Dsgn</a>, looking for continuous opportunities to grow and learn!<br>
+I'm currently a Junior Visual Designer @ <a style="color: #7a52a1;" href="https://www.so-design.co/" target="_blank" rel="noopener noreferrer">SO Dsgn</a>, looking for continuous opportunities to grow and learn!<br>

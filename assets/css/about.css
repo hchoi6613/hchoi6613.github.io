@@ -1,0 +1,20 @@
+/* Flex container */
+.flex-container {
+    display: flex;
+}
+
+/* Flex item with equal width */
+.flex-item {
+    flex: 1;
+}
+
+/* Image styling */
+.flex-item img {
+    width: 100%;
+}
+
+/* Padding for the second flex item */
+.flex-item-padding {
+    flex: 1.5; /* Increase the flex value to give more space */
+    padding-left: 70px;
+}
