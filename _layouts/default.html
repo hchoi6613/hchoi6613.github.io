@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,16 +17,14 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </head>
-
 <body>
   <div class="d-flex flex-column min-vh-100">
     {% include navbar.html %}
-    <div class="container mt-4">
+    <div class="container mt-5">
       {{ content }}
     </div>
     {% include footer.html %}
   </div>
-
+  <script src="{{ site.baseurl }}/assets/js/scrollspy.js"></script>
 </body>
-
 </html>

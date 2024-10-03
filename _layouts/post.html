@@ -2,7 +2,8 @@
 layout: default
 title: post
 ---
-
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/progress_bar.css">
+<div id="progressBar"></div>
 <h1 class="pb-3">{{ page.title }}</h1>
 {% for item in page.timeline %}
 <blockquote class="blockquote">
@@ -10,4 +11,3 @@ title: post
 </blockquote>
 {% endfor %}
 {{content}}
-
